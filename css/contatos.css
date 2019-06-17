@@ -1,0 +1,225 @@
+* {
+    margin: 10px;
+    padding: 0;
+}
+
+#name {
+    font-family: 'Roboto', sans-serif;
+    color: #384CFF;
+    margin-left: -15%;
+}
+
+div.div-header {
+    display: flex;
+    align-items: center;
+}
+
+#div-profile-picture {
+    width: 50%;
+}
+
+#div-name {
+    width: 90%;
+}
+
+#i-profile-picture {
+    size: 70px;
+}
+
+#div-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#div-buttons-button-contatos {
+    margin: 0;
+    height: 100%;
+}
+
+#button-contatos {
+    margin: 0;
+    background-color: #384CFF;
+    font-family: 'Roboto';
+    color: white;
+    height: 36px;
+    width: 110px;
+    border: 0px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#div-buttons-button-grupos {
+    margin: 0;
+    height: 100%;
+}
+
+#button-grupos {
+    margin: 0;
+    background-color: #B4B4B4;
+    font-family: 'Roboto';
+    color: white;
+    height: 36px;
+    width: 110px;
+    border: 0px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#div-bar {
+    width: 160px;
+    border: 1px solid #cccccc;
+    background-color: #cccccc;
+    margin-left: -25px;
+    margin-top: 0px;
+    height: 1px;
+}
+
+#div-bar1 {
+    width: 160px;
+    border: 1px solid #cccccc;
+    background-color: #cccccc;
+    margin-left: -25px;
+    margin-top: 0px;
+    height: 1px;
+    display: none;
+}
+
+#div-container {
+    display: flex;
+}
+
+div.div-container-class:hover {
+    background-color: #cccccc;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+div.div-contato {
+    width: 47px;
+    height: 47px;
+    cursor: pointer;
+}
+
+#div-nome {
+    height: 15px;
+}
+
+h2.nomeAPi {
+    font-family: 'Roboto';
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+}
+
+h2.nomeGrupoAPi {
+    font-family: 'Roboto';
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+}
+
+#div-nomeEdiv-mensagem {
+    max-width: 217.16px;
+}
+
+#div-contatoEmensagem {
+    margin: 0;
+}
+
+div.div-visto {
+    font-family: 'Roboto';
+    margin: 0;
+    width: max-content;
+}
+
+h6 {
+    font-family: 'Roboto';
+}
+
+h5 {
+    font-family: 'Roboto';
+    margin: 0;
+    width: max-content;
+}
+
+#div-mensagem {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0 0 0 5%;
+    height: 30%;
+    max-width: 110px;
+}
+
+#div-mensagem-usuario {
+    margin: -20px 0 0px 0px;
+    width: 220%;
+}
+
+#div-espacamento {
+    height: 10%;
+    margin-top: 10%;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+#div-separator {
+    width: 98%;
+    height: 1px;
+    background-color: #B4B4B4;
+    border: 0.5px solid #B4B4B4;
+}
+
+img.imagemAPi {
+    max-width: 63px;
+    max-height: 63px;
+    margin: 0;
+    border-radius: 360px;
+}
+
+img.imagemGrupoAPi {
+    width: 63px;
+    height: 63px;
+    margin: 0;
+    border-radius: 360px;
+}
+
+@media (max-width: 1024px) {
+    #i-profile-picture {
+        font-size: 63px;
+    }
+    #name {
+        font-size: 15px;
+    }
+    #div-name {
+        width: 150%;
+    }
+    #div-bar {
+        width: 160px;
+        height: 1px;
+        border: 1px solid #cccccc;
+        background-color: #cccccc;
+        margin-left: -30px;
+    }
+    #div-separator {
+        width: 93%;
+        height: 1px;
+        background-color: #B4B4B4;
+        border: 0.5px solid #B4B4B4;
+    }
+    div.div-visto {
+        height: 100%;
+        width: 0%;
+        margin: 0 0 0 0;
+        justify-content: space-between;
+        display: contents;
+    }
+    #div-mensagem-usuario {
+        margin: -20px 0 0px 0px;
+        width: 115%;
+    }
+}

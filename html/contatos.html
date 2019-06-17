@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/contatos.css" media="screen" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="../media/robo.png" type="image/x-icon">
+    <title>ChatBox</title>
+</head>
+
+<body onload="hiddenGrupos();changeName()">
+
+    <div class="div-header">
+
+        <div id="div-profile-picture">
+            <img id="i-profile-picture" src="../media/round-account_circle-black-18/round_account_circle_black_18dp.png">
+        </div>
+        <div id="div-name">
+            <h1 id="name"></h1>
+        </div>
+    </div>
+    <div id="div-buttons">
+        <div id="div-buttons-button-contatos">
+            <button class="tablinks" onclick="switchColorButton1();navigateTabs(event, 'Contatos');moveDiv1()" id="button-contatos">CONTATOS</button>
+            <div id="div-bar"></div>
+        </div>
+        <div id="div-buttons-button-grupos">
+            <button class="tablinks" onclick="switchColorButton();navigateTabs(event, 'Grupos');moveDiv()" id="button-grupos">GRUPOS</button>
+            <div id="div-bar1"></div>
+        </div>
+    </div>
+
+
+    <div id="Contatos" class="tabcontent">
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div id="div-contatoEmensagem"></div>
+            <div class="div-contato" id="div-contato1"><img title="Tony Ramirez" class="imagemAPi"></div>
+
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeAPi"></h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6 class="mensagemAPi">Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto" id="div-visto-primeiro">
+                <h5 class="vistoAPi">00:00</h5>
+            </div>
+
+
+        </div>
+        <div id="div-separator"></div>
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato2"><img title="Adrian Willis" class="imagemAPi" id="img-profile-picture" src="../media/picture-white.jpg"></div>
+
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeAPi"></h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6>Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato3"><img title="Diane Duncan" class="imagemAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeAPi"></h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6>Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato4"><img title="Herman Wells" class="imagemAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeAPi"></h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6>Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato5"><img title="Doris Edwards" class="imagemAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeAPi"></h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6>Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato6"><img title="Ronald Wallace" class="imagemAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeAPi"></h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6>Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato7"><img title="Gail Carr" class="imagemAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeAPi"></h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6>Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato8"><img title="Grace Shaw" class="imagemAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeAPi"></h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6>Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato9"><img title="Bertha Jimenez" class="imagemAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeAPi"></h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6>Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato10"><img title="Tracy Garrett" class="imagemAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeAPi"></h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6>Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato11"><img title="Mathew Vargas" class="imagemAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeAPi"></h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6>Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato12"><img title="Margie Gomez" class="imagemAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeAPi"></h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6>Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato13"><img title="Bruce Morrison" class="imagemAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeAPi"></h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6>Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato14"><img title="Louis Cox" class="imagemAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeAPi"></h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6>Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato15"><img title="Madison Gilbert" class="imagemAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeAPi"></h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6>Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato16"><img title="Amber Kelley" class="imagemAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeAPi"></h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6>Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato17"><img title="Dan Wells" class="imagemAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeAPi"></h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6>Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato18"><img title="Hailey Wheeler" class="imagemAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeAPi"></h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6>Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato19"><img title="Mildred Pena" class="imagemAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeAPi"></h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6>Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato20"><img title="Alice Kelly" class="imagemAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeAPi"></h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6>Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+    </div>
+
+
+
+    <div id="Grupos" class="tabcontent">
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato1"><img class="imagemGrupoAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeGrupoAPi">GRUPO 1</h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem-usuario">
+                    <h6 class="usuarioAPi">DSFDSFS</h6>
+                    <div id="div-mensagem">
+                        <h6 class="mensagemGrupoAPi"></h6>
+                    </div>
+                </div>
+
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoGrupoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato1"><img class="imagemGrupoAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeGrupoAPi">GRUPO 2</h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6 class="mensagemGrupoAPi">Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoGrupoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+
+        <div id="div-container" class="div-container-class" onclick="chat()">
+            <div class="div-contato" id="div-contato1"><img class="imagemGrupoAPi"></div>
+            <div id="div-nomeEdiv-mensagem">
+                <div id="div-nome">
+                    <h2 class="nomeGrupoAPi">GRUPO 3</h2>
+                </div>
+                <div id="div-espacamento"></div>
+                <div id="div-mensagem">
+                    <h6 class="mensagemGrupoAPi">Boa tarde...</h6>
+                </div>
+            </div>
+            <div class="div-visto">
+                <h5 class="vistoGrupoAPi">00:00</h5>
+            </div>
+        </div>
+        <div id="div-separator"></div>
+
+
+    </div>
+
+    </div>
+
+
+
+    </div>
+
+    <script type="text/javascript" src="../javascript/contatos.js"></script>
+</body>
+
+</html>

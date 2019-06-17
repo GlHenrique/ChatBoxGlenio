@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#robo-image {
+    width: 20%;
+    height: 20%;
+    margin-top: 300px;
+}
+
+div.robo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#balao-image {
+    width: 10%;
+    height: 10%;
+}
+
+div.balao {
+    display: flex;
+    justify-content: center;
+    margin-top: -500px;
+    margin-left: -550px;
+}
+
+text {
+    color: #384CFF;
+    font-family: 'Coming Soon', cursive;
+    margin-left: -150px;
+    margin-top: 60px;
+    font-size: 17px;
+}
+
+div.next-page {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+#next {
+    margin-right: 25px;
+    color: #384CFF;
+    font-size: 130px;
+    margin-top: 258px;
+}
+
+#next:hover {
+    cursor: pointer;
+}
+
+div.before-page {
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+#before {
+    margin-right: 25px;
+    color: #384CFF;
+    font-size: 130px;
+    margin-top: 200px;
+}
+
+div.buttons {
+    display: flex;
+}
+
+div.confirm {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: -150px;
+}
+
+#yes {
+    font-size: 60px;
+    color: #2DBC1D;
+    cursor: pointer;
+}
+
+#no {
+    font-size: 60px;
+    color: #FF0000;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    #robo-image {
+        width: 50%;
+        height: 50%;
+        margin-top: 400px;
+    }
+    div.balao {
+        display: flex;
+        justify-content: center;
+        margin-top: -430px;
+        margin-left: 65px;
+    }
+    #balao-image {
+        width: 70%;
+        height: 70%;
+    }
+    text {
+        color: #384CFF;
+        font-family: 'Coming Soon', cursive;
+        margin-left: -130px;
+        margin-top: 40px;
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+    }
+    div.next-page {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+    }
+    #next {
+        margin-right: 25px;
+        color: #384CFF;
+        font-size: 130px;
+        margin-top: 185px;
+        margin-left: -20px;
+    }
+    div.before-page {
+        display: flex;
+        justify-content: flex-start;
+        height: 100%;
+    }
+    #before {
+        margin-right: 25px;
+        color: #384CFF;
+        font-size: 130px;
+        margin-top: 150px;
+    }
+    div.confirm {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -150px;
+        padding-left: 40px;
+    }
+}

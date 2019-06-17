@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="../css/style3.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="../media/robo.png" type="image/x-icon">
+</head>
+
+<body background="../media/background.jpg">
+    <div class="robo">
+        <img id="robo-image" src="../media/robo.png">
+
+    </div>
+    <div class="balao">
+        <img id="balao-image" src="../media/balao-foto.jpg">
+
+    </div>
+    <div class="buttons">
+        <div class="before-page">
+            <a href="../html/page4.html"><i id="next" class="material-icons">navigate_before</i></a>
+        </div>
+    </div>
+    <div class="confirm">
+        <label for="Upload" id="upload"><i id="yes" class="material-icons">check_circle_outline</i></label>
+        <input oninput="setCookieImage()" type="file" id="Upload" style="display: none">
+        <a href="http://127.0.0.1:5500/html/contatos.html"><i id="no" class="material-icons">highlight_off</i></a>
+    </div>
+    <script type="text/javascript" src="../javascript/contatos.js"></script>
+
+</body>
+
+</html>

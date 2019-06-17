@@ -234,10 +234,14 @@ requestGrupos.onload = function() {
 
 requestGrupos.send();
 
+///////////////////////////////////////////////////////////////////
+
+
 function zoomImageContatos() {
-    var imagem;
-    imagem = document.getElementsByClassName('imagemAPi').value;
-    imagem.style.width = '600px';
+
+    var imagem = document.getElementsByClassName('imagemAPi');
+    console.log(imagem);
+
 }
 
 function navigateTabs(evt, cityName) {
@@ -367,20 +371,3 @@ function changeName() {
 //     ///// NECESSITO DE RESOLVER O COOKIE DA IMAGEM////
 
 // }
-
-
-function checkCookie() {
-    var user = getCookie("userimage");
-    if (user != "") {
-        var nm = document.getElementById("userimage");
-        nm.innerHTML = nm.innerHTML.replace("$name$", user);
-    }
-}
-
-function chat() {
-    var divContainerClass = document.getElementsByClassName('div-container-class');
-    var nomeAPi = this.document.getElementsByClassName('nomeAPi');
-    conteudoNomeAPi = nomeAPi[0].innerText;
-    console.log(conteudoNomeAPi);
-    //divContainerClass.addEventListener('click', redirecionaPage("http://127.0.0.1:5500/html/conversa.html"));
-}

@@ -4,7 +4,8 @@ var divBar = document.getElementById('div-bar');
 var divBar1 = document.getElementById('div-bar1');
 var Grupos = document.getElementById('Grupos');
 var next = document.getElementById('next');
-var file = document.getElementById('Upload');
+
+
 
 
 
@@ -340,18 +341,6 @@ function redirecionaPage(url) {
 }
 
 
-function setCookieImage() {
-    var upload = document.getElementById('Upload').value;
-    var cName = "userimage=" + upload;
-    var d = new Date();
-    d.setTime(d.getTime() + (10 * 24 * 60 * 60 * 1000));
-    var expires = "expires=" + d.toGMTString();
-    document.cookie = cName + ";" + expires + ";path=/";
-    window.location.assign("http://127.0.0.1:5500/html/contatos.html");
-
-}
-
-
 function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
@@ -371,3 +360,20 @@ function changeName() {
 //     ///// NECESSITO DE RESOLVER O COOKIE DA IMAGEM////
 
 // }
+
+function previewFile() {
+    var preview = document.querySelector('#imagemUsuario');
+    var file = document.querySelector('input[type=file]').files[0];
+    var reader = new FileReader();
+
+    reader.addEventListener("load", function() {
+        preview.src = reader.result;
+    }, false);
+
+    if (file) {
+        reader.readAsDataURL(file);
+    }
+    var file = document.getElementById('imagemUsuario');
+    var fileSrc = file.getAttribute('src');
+    return fileSrc
+}

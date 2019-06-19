@@ -238,12 +238,12 @@ requestGrupos.send();
 ///////////////////////////////////////////////////////////////////
 
 
-function zoomImageContatos() {
+// function zoomImageContatos() {
 
-    var imagem = document.getElementsByClassName('imagemAPi');
-    console.log(imagem);
+//     var imagem = document.getElementsByClassName('imagemAPi');
+//     console.log(imagem);
 
-}
+// }
 
 function navigateTabs(evt, cityName) {
     var i, tabcontent, tablinks;
@@ -287,7 +287,6 @@ function hiddenGrupos() {
     Grupos.style.display = 'none'
 }
 
-
 function setCookieNome() {
     var caixaNome = document.getElementById('caixaNome').value;
     var cName = "username=" + caixaNome;
@@ -302,8 +301,6 @@ function setCookieNome() {
     }
 
 }
-
-
 
 function setCookieEmail() {
     var caixaEmail = document.getElementById('caixaEmail').value;
@@ -353,14 +350,6 @@ function changeName() {
     document.getElementById('name').innerHTML = getNome;
 }
 
-// function changeImage() {
-//     var getFunction = getCookie();
-//     var getImage = getFunction[4];
-//     document.getElementById('i-profile-picture').value = getImage;
-//     ///// NECESSITO DE RESOLVER O COOKIE DA IMAGEM////
-
-// }
-
 function previewFile() {
     var preview = document.querySelector('#imagemUsuario');
     var file = document.querySelector('input[type=file]').files[0];
@@ -376,4 +365,19 @@ function previewFile() {
     var file = document.getElementById('imagemUsuario');
     var fileSrc = file.getAttribute('src');
     return fileSrc
+}
+
+function setCookieImage() {
+    var caixaImage = document.getElementById('imagemUsuario');
+    var cImage = "userimage=" + caixaImage;
+    var d = new Date();
+    d.setTime(d.getTime() + (10 * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cImage + ";" + expires + ";path=/";
+}
+
+function changeImage() {
+    var x = document.getElementById('i-profile-picture').innerHTML;
+    var teste = previewFile();
+    x.setAttribute('src', teste);
 }
